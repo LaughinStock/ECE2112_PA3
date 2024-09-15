@@ -43,7 +43,7 @@ To start with this assignment we must import the libraries numpy and pandas
    ![image](https://github.com/user-attachments/assets/21370699-4a22-4f12-8ad5-a1641e42651a)
 
   ### D. Output of "cars.loc[cars['Model'].isin(['Mazda RX4 Wag', 'Ford Pantera L', 'Honda Civic']), ['Model', 'cyl', 'gear']]"
-      ![image](https://github.com/user-attachments/assets/594881e5-b961-4e31-9532-b75219338bc9)
+   ![image](https://github.com/user-attachments/assets/594881e5-b961-4e31-9532-b75219338bc9)
 
 
 
