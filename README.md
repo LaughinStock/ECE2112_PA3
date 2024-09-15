@@ -45,13 +45,12 @@ To import the csv file into the notebook, we are going to use the "pd.read_csv('
   
   For majority of the parts, we are going to utilize the *".loc[]"* and *".iloc[]"* functions of pandas
   in order to find the exact data that we are going to find. 
-
-  The syntax '[:, 1::2]' is explained as '[select all rows, index 1 and then every second column] 
+ 
   ### A. Output of "carshead.iloc[:, 1::2]"
    ![image](https://github.com/user-attachments/assets/e4b9d53a-770d-4ba8-8d1c-9a72b3e785bd)
   
   For part A, we are going to use *".iloc"* because we are focused on selecting columns by their position 
-  and not by their name. 
+  and not by their name. The syntax '[:, 1::2]' is explained as '[select all rows, index 1 and then every second column]'
 
   In part B, we are finding the data in "carshead" which contains the car 'Model' of 'Mazda RX4'.
   ### B. Output of "carshead.loc[carshead['Model']=='Mazda RX4']"
