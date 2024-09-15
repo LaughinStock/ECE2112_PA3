@@ -38,8 +38,11 @@ To import the csv file into the notebook, we are going to use the "pd.read_csv('
     and indexing. The second problem is divided into four parts. 
     
    **A.** Display the first five rows with odd-numbered columns (1, 3, 5, 7, ...).
+   
    **B.** Display the row that contains the 'Model' of 'Mazda RX4'.
+   
    **C.** How many cylinders ('cyl') does the car model 'Camaro Z28' have?
+   
    **D.** Determine how many cylinders ('cyl') and what gear type ('gear') do the car models 'Mazda RX4 Wag',  
           'Ford Pantera L', and 'Honda Civic' have.
   
@@ -52,10 +55,9 @@ To import the csv file into the notebook, we are going to use the "pd.read_csv('
   For part A, we are going to use *".iloc"* because we are focused on selecting columns by their position 
   and not by their name. The syntax '[:, 1::2]' is explained as '[select all rows, index 1 and then every second column]'
 
-  In part B, we are finding the data in "carshead" which contains the car 'Model' of 'Mazda RX4'.
   ### B. Output of "carshead.loc[carshead['Model']=='Mazda RX4']"
    ![image](https://github.com/user-attachments/assets/821c69a1-47c9-4fc4-a57d-7f5a90511062)
-  
+
   For part B and others, we are going to use *".loc[]"* because we are now focusing on selecting columns
   because of their specific categories and names.
 
