@@ -11,10 +11,10 @@ numerical tables and time series (examining data).
 
 # Problems
 
-##**3.1**, Displaying the first and last five rows of the file, "cars.csv".
+## **3.1**, Displaying the first and last five rows of the file, "cars.csv".
   
   
 
 
-##**3.2**, Extracting information using slicing, subsetting, and indexing.
+## **3.2**, Extracting information using slicing, subsetting, and indexing.
 
