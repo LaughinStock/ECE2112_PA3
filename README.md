@@ -9,7 +9,10 @@ This programming assingment (PA) deals with the used of Pandas, a software libra
 with data manipulation and analysis. It offers data structures and operations for manipulating
 numerical tables and time series (examining data).
 
-To start with this assignment we must import the libraries numpy and pandas 
+To start with this assignment we must import the numpy and pandas libraries and the cars.csv file into the Jupyter Notebook.
+Download first the cars.csv file into your computer and then move it into your Jupyter Notebook folder.
+To import the csv file into the notebook, we are going to use the "pd.read_csv('cars.csv').
+![image](https://github.com/user-attachments/assets/de60329c-ccdc-451b-ae8e-c4e443bb8838)
 
 # Problems
 
@@ -72,6 +75,9 @@ To start with this assignment we must import the libraries numpy and pandas
   for the arrays to be saved into a .npy file. 
   ### E. Code for creating and saving the dictionary into .npy
    ![image](https://github.com/user-attachments/assets/4b7efd09-08ee-4992-b4d5-9e1b72fc6edd)
+
+
+
 
   
 
