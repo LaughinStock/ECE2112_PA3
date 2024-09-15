@@ -10,7 +10,7 @@ with data manipulation and analysis. It offers data structures and operations fo
 numerical tables and time series (examining data).
 
 To start with this assignment we must import the numpy and pandas libraries and the *cars.csv* file into the Jupyter Notebook.
-Download first the *cars.csv* file into your computer and then move the file into your Jupyter Notebook folder.
+Download first the *cars.csv* file into your computer and then move the file into Jupyter Notebook folder.
 To import the csv file into the notebook, we are going to use the "pd.read_csv('cars.csv') function.
 
 ![image](https://github.com/user-attachments/assets/de60329c-ccdc-451b-ae8e-c4e443bb8838)
@@ -53,7 +53,7 @@ To import the csv file into the notebook, we are going to use the "pd.read_csv('
    ![image](https://github.com/user-attachments/assets/e4b9d53a-770d-4ba8-8d1c-9a72b3e785bd)
   
   For part A, we are going to use *".iloc"* because we are focused on selecting columns by their position 
-  and not by their name. The syntax '[:, 1::2]' which means '["select all rows", "index 1 and then every second column"]'
+  and not by their name. The syntax '[:, 1::2]' which means ["select all rows", "index 1 and then every second column"].
 
   ### B. Output of "carshead.loc[carshead['Model']=='Mazda RX4']"
    ![image](https://github.com/user-attachments/assets/821c69a1-47c9-4fc4-a57d-7f5a90511062)
