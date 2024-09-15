@@ -37,11 +37,11 @@ To import the csv file into the notebook, we are going to use the "pd.read_csv('
   Compared to the first problem, this one is going to use the different extracting methods such as slicing, subsetting,
     and indexing. The second problem is divided into four parts. 
     
-    A. Display the first five rows with odd-numbered columns (1, 3, 5, 7, ...).
-    B. Display the row that contains the 'Model' of 'Mazda RX4'.
-    C. How many cylinders ('cyl') does the car model 'Camaro Z28' have?
-    D. Determine how many cylinders ('cyl') and what gear type ('gear') do the car models 'Mazda RX4 Wag',  
-       'Ford Pantera L', and 'Honda Civic' have.
+   **A.** Display the first five rows with odd-numbered columns (1, 3, 5, 7, ...).
+   **B.** Display the row that contains the 'Model' of 'Mazda RX4'.
+   **C.** How many cylinders ('cyl') does the car model 'Camaro Z28' have?
+   **D.** Determine how many cylinders ('cyl') and what gear type ('gear') do the car models 'Mazda RX4 Wag',  
+          'Ford Pantera L', and 'Honda Civic' have.
   
   For majority of the parts, we are going to utilize the *".loc[]"* and *".iloc[]"* functions of pandas
   in order to find the exact data that we are going to find. 
@@ -49,23 +49,27 @@ To import the csv file into the notebook, we are going to use the "pd.read_csv('
   The syntax '[:, 1::2]' is explained as '[select all rows, index 1 and then every second column] 
   ### A. Output of "carshead.iloc[:, 1::2]"
    ![image](https://github.com/user-attachments/assets/e4b9d53a-770d-4ba8-8d1c-9a72b3e785bd)
+  
   For part A, we are going to use *".iloc"* because we are focused on selecting columns by their position 
   and not by their name. 
 
   In part B, we are finding the data in "carshead" which contains the car 'Model' of 'Mazda RX4'.
   ### B. Output of "carshead.loc[carshead['Model']=='Mazda RX4']"
    ![image](https://github.com/user-attachments/assets/821c69a1-47c9-4fc4-a57d-7f5a90511062)
+  
   For part B and others, we are going to use *".loc[]"* because we are now focusing on selecting columns
   because of their specific categories and names.
 
   ### C. Output of "cars.loc[(cars['Model']) == 'Camaro Z28', ['cyl']]"
    ![image](https://github.com/user-attachments/assets/21370699-4a22-4f12-8ad5-a1641e42651a)
+  
   In part C, we are still using the same function but instead of the dataFrame "carshead", we are going to use the 
   whole "cars" dataFrame because the model we are looking for is not available in the carshead dataFrame. 
   Plus the code for this part specifies that only the 'cyl' column should be returned.
 
   ### D. Output of "cars.loc[cars['Model'].isin(['Mazda RX4 Wag', 'Ford Pantera L', 'Honda Civic']), ['Model', 'cyl', 'gear']]"
    ![image](https://github.com/user-attachments/assets/594881e5-b961-4e31-9532-b75219338bc9)
+  
   In part D, we are going to continue to use the whole "cars" spreadsheet because we are now looking for multiple
   data entries with corresponding datas. Since this problem requires us to find the datas corresponding to multiple 
   values, we are going to use the 'isin()' function to filter rows based on multiple values. And then specify which 
@@ -73,6 +77,7 @@ To import the csv file into the notebook, we are going to use the "pd.read_csv('
  
   ### E. Code for creating and saving the dictionary into .npy
    ![image](https://github.com/user-attachments/assets/4b7efd09-08ee-4992-b4d5-9e1b72fc6edd)
+  
   Now in order to save the created dataframes into "DomingoJF_Pandas_P2, we are going to first convert the variables 
   into arrays using the *".to_numpy"* function of numpy and then store the arrays into a dictionary (*dict = {*) in order
   for the arrays to be saved into a .npy file.
