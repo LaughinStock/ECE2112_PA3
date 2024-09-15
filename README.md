@@ -32,6 +32,12 @@ To start with this assignment we must import the libraries numpy and pandas
 ## **3.2**, Extracting information using slicing, subsetting, and indexing.
   Compared to the first problem, this one is going to use the different extracting methods such as slicing, subsetting,
     and indexing. The second problem is divided into four parts. 
+    
+    A. Display the first five rows with odd-numbered columns (1, 3, 5, 7, ...).
+    B. Display the row that contains the 'Model' of 'Mazda RX4'.
+    C. How many cylinders ('cyl') does the car model 'Camaro Z28' have?
+    D. Determine how many cylinders ('cyl') and what gear type ('gear') do the car models 'Mazda RX4 Wag',  
+       'Ford Pantera L', and 'Honda Civic' have.
 
   ### A. Output of "carshead.iloc[:, 1::2]"
    ![image](https://github.com/user-attachments/assets/e4b9d53a-770d-4ba8-8d1c-9a72b3e785bd)
